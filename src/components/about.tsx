@@ -35,7 +35,7 @@ const About: React.FC = () => {
               I am a Junior web and Graphic User Interface Developer.
             </h3>
             <p className="mb-6">
-              From 2020 to 2023, I pursued a degree in computer engineering at
+              From 2020 to 2023, I pursued a Bachelor degree in computer engineering at
               the Sciences and Techniques Faculty (FST) in Tangier, Morocco. The
               program equipped me with knowledge and skills in software
               development, hardware design, networking, and system analysis.
