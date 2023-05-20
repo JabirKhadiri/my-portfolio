@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./assets/fonts/Orbitron-Black.ttf') format('truetype');
+  src: url('./assets/fonts/Orbitron-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/Orbitron-SemiBold.ttf') format('truetype');
+  src: url('./assets/fonts/Orbitron-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/Orbitron-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aldrich';
+  src: url('./assets/fonts/Aldrich-Regular.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/Rajdhani-Light.ttf') format('truetype');
+  src: url('./assets/fonts/Rajdhani-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/Rajdhani-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Rajdhani-SemiBold.ttf') format('truetype');
+}
 
 .btn {
   background: linear-gradient(
