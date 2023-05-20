@@ -32,13 +32,16 @@ const About: React.FC = () => {
           >
             <h2 className="h2 text-accent">About me</h2>
             <h3 className="h3 mb-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              I am a Junior web and Graphic User Interface Developer.
             </h3>
             <p className="mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              unde perferendis nemo omnis similique cum incidunt expedita
-              sapiente provident architecto! Laboriosam, dicta saepe? Fugit hic
-              perspiciatis incidunt dolore natus tempore.
+              From 2020 to 2023, I pursued a degree in computer engineering at
+              the Sciences and Techniques Faculty (FST) in Tangier, Morocco. The
+              program equipped me with knowledge and skills in software
+              development, hardware design, networking, and system analysis.
+              Through hands-on projects, I developed problem-solving abilities
+              and a passion for technology. I am now ready for a successful
+              career in computer engineering.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -46,11 +49,11 @@ const About: React.FC = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={6} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
+                  Projects <br />
+                  Done
                 </div>
               </div>
               <div>
@@ -58,11 +61,11 @@ const About: React.FC = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={11} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
+                  Frameworks/<br />
+                  Programming Languages
                 </div>
               </div>
               <div>
@@ -70,7 +73,7 @@ const About: React.FC = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={13} end={1} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Years of <br />
