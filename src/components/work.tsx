@@ -14,18 +14,21 @@ const Work: React.FC = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-4 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-7 mb-10 lg:mb-0"
           >
             <div>
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br />
                 Work
               </h2>
-              <p className="max-x-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae sit deleniti, praesentium repellendus iste cum.
-                Molestias asperiores quisquam dolorum rem aperiam, eveniet, quia
-                fugiat quasi repellendus perspiciatis eligendi neque eaque!
+              <p className="max-x-sm mb-5">
+                I have been gaining
+                valuable experience in both GUI and full-stack development. I
+                have been working on various projects where I have honed my
+                skills in designing user interfaces that are visually appealing
+                and intuitive to use. Through my dedication and continuous
+                learning, I am eager to further enhance my proficiency in GUI
+                and full-stack development.
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
@@ -40,7 +43,6 @@ const Work: React.FC = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img1}
-                alt=""
               />
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-24
@@ -74,7 +76,6 @@ const Work: React.FC = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img2}
-                alt=""
               />
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-24
