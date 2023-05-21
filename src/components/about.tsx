@@ -11,7 +11,7 @@ const About: React.FC = () => {
 
   const MY_RESUME_URL = "http://localhost:5173/../../public/Jabir_Khadiri.pdf";
 
-  /*const download = (url: string) => {
+  const download = (url: string) => {
     fetch(url)
       .then((responce) => responce.blob())
       .then((blob) => {
@@ -24,7 +24,7 @@ const About: React.FC = () => {
         aTag.click();
         aTag.remove();
       });
-  };*/
+  };
 
   return (
     <section className="section" id="about" ref={ref}>
@@ -107,7 +107,7 @@ const About: React.FC = () => {
               <a
                 href={MY_RESUME_URL}
                 className="text-gradient btn-link"
-                download
+                download={download}
               >
                 My resume
               </a>

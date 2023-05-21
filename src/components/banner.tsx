@@ -6,6 +6,21 @@ import { Link } from "react-scroll";
 
 const Banner = () => {
   const MY_RESUME_URL = "http://localhost:5173/../../public/Jabir_Khadiri.pdf";
+
+  const download = (url: string) => {
+    fetch(url)
+      .then((responce) => responce.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = blobURL;
+        aTag.setAttribute("download", fileName || "jabir_khadiri.pdf");
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
+  };
   
   return (
     <section
@@ -67,7 +82,7 @@ const Banner = () => {
               <Link to="contact" smooth={true} duration={1500}>
                 <button className="btn btn-lg">Contact me</button>
               </Link>
-              <a href={MY_RESUME_URL} className="text-gradient btn-link" download>My resume</a>
+              <a href={MY_RESUME_URL} className="text-gradient btn-link" download={download}>My resume</a>
             </motion.div>
           </div>
           <motion.div
