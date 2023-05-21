@@ -1,25 +1,26 @@
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const services = [
   {
     name: "Single-Page Application (SPA)",
     description:
       "As a developer, I specialize in creating Single-Page Applications (SPAs) using HTML, CSS, JavaScript, and React. With React, I can efficiently build dynamic and interactive web applications that deliver a seamless user experience. By leveraging my skills in HTML, CSS, and JavaScript, I ensure that the SPAs I develop are visually appealing, responsive, and feature-rich.",
-    link: "Learn more",
+    link: "https://developer.mozilla.org/fr/docs/Glossary/SPA",
   },
   {
-    name: "Backend Application",
+    name: "Full-stack Application",
     description:
-      "I specialize in developing backend applications using PHP or TypeScript, with a focus on creating RESTful APIs. In TypeScript, I utilize the NestJS framework, which provides a scalable and modular architecture for building RESTful APIs. Whether it's PHP or TypeScript, I have the expertise to develop backend applications and APIs that meet your requirements.",
-    link: "Learn more",
+      "I specialize in developing full-stack applications using reactJS and TypeScript or PHP, with a focus on creating RESTful APIs. In TypeScript, I utilize the NestJS framework, which provides a scalable and modular architecture for building RESTful APIs. Whether it's PHP or TypeScript, I have the expertise to develop fullstack applications and APIs that meet your requirements.",
+    link: "https://www.simplilearn.com/what-is-full-stack-development-article",
   },
   {
     name: "Graphic User Interface (GUI)",
     description:
       "I have experience in developing Graphical User Interface (GUI) applications using Java and JavaFX. JavaFX is a powerful framework that allows for the creation of visually appealing and interactive user interfaces. With my expertise in Java and JavaFX, I can design and implement GUI applications that provide a seamless user experience, leveraging the rich set of features and components available in JavaFX.",
-    link: "Learn more",
+    link: "https://www.educba.com/what-is-gui/",
   },
 ];
 
@@ -40,7 +41,9 @@ const Services: React.FC = () => {
             <h3 className="h3 max-w-[455px] mb-16">
               I am a Fullstack Web and GUI developer.
             </h3>
-            <button className="btn btn-sm">Check my work</button>
+            <Link to="work" smooth={true} duration={1500}>
+              <button className="btn btn-sm">Check my work</button>
+            </Link>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -69,14 +72,17 @@ const Services: React.FC = () => {
                   </div>
                   <div className="flex flex-col flex-1 items-end">
                     <a
-                      href="#"
+                      href={service.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn w-9 h-9 mb-[42px] flex justify-center
                     items-center"
                     >
                       <BsArrowUpRight />
                     </a>
-                    <a href="#" className="text-gradient text-sm">
-                      {service.link}
+
+                    <a className="text-gradient text-sm">
+                    Learn more
                     </a>
                   </div>
                 </div>

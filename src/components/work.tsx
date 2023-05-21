@@ -4,6 +4,10 @@ import Img1 from "../assets/portfolio-img1.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
 
+const openWebPage = () => {
+  window.open('https://github.com/JabirKhadiri', '_blank');
+};
+
 const Work: React.FC = () => {
   return (
     <section className="section" id="work">
@@ -30,7 +34,7 @@ const Work: React.FC = () => {
                 learning, I am eager to further enhance my proficiency in GUI
                 and full-stack development.
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button onClick={openWebPage} className="btn btn-sm">View all projects</button>
             </div>
             <div
               className="group relative overflow-hidden border-2
@@ -48,13 +52,13 @@ const Work: React.FC = () => {
                 className="absolute -bottom-full left-12 group-hover:bottom-24
             transition-all duration-500 z-50"
               >
-                <span className="text-gradient">Lorem ipsum dolor sit</span>
+                <span className="text-gradient">GUI using Java and JavaFX</span>
               </div>
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-14
             transition-all duration-700 z-50"
               >
-                <span className="text-3xl text-white">Project title</span>
+                <span className="text-3xl text-white">Tracking orders</span>
               </div>
             </div>
           </motion.div>
@@ -81,13 +85,13 @@ const Work: React.FC = () => {
                 className="absolute -bottom-full left-12 group-hover:bottom-24
             transition-all duration-500 z-50"
               >
-                <span className="text-gradient">Lorem ipsum dolor sit</span>
+                <span className="text-gradient">Static responsive web site</span>
               </div>
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-14
             transition-all duration-700 z-50"
               >
-                <span className="text-3xl text-white">Project title</span>
+                <span className="text-3xl text-white">World Cup 2022</span>
               </div>
             </div>
             <div
@@ -101,19 +105,18 @@ const Work: React.FC = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img3}
-                alt=""
               />
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-24
             transition-all duration-500 z-50"
               >
-                <span className="text-gradient">Lorem ipsum dolor sit</span>
+                <span className="text-gradient">Fullstack Ecommerce web site</span>
               </div>
               <div
                 className="absolute -bottom-full left-12 group-hover:bottom-14
             transition-all duration-700 z-50"
               >
-                <span className="text-3xl text-white">Project title</span>
+                <span className="text-3xl text-white">GreenStore</span>
               </div>
             </div>
           </motion.div>

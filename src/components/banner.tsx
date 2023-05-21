@@ -5,6 +5,8 @@ import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
 const Banner = () => {
+  const MY_RESUME_URL = "http://localhost:5173/../../public/Jabir_Khadiri.pdf";
+  
   return (
     <section
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -65,6 +67,7 @@ const Banner = () => {
               <Link to="contact" smooth={true} duration={1500}>
                 <button className="btn btn-lg">Contact me</button>
               </Link>
+              <a href={MY_RESUME_URL} className="text-gradient btn-link" download>My resume</a>
             </motion.div>
           </div>
           <motion.div
@@ -73,7 +76,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-            <img src={Image} alt="" />
+            <img src={Image} />
           </motion.div>
         </div>
       </div>

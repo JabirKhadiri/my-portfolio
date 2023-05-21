@@ -2,11 +2,29 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const About: React.FC = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
+
+  const MY_RESUME_URL = "http://localhost:5173/../../public/Jabir_Khadiri.pdf";
+
+  /*const download = (url: string) => {
+    fetch(url)
+      .then((responce) => responce.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = blobURL;
+        aTag.setAttribute("download", fileName || "jabir_khadiri.pdf");
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
+  };*/
 
   return (
     <section className="section" id="about" ref={ref}>
@@ -35,13 +53,13 @@ const About: React.FC = () => {
               I am a Junior web and Graphic User Interface Developer.
             </h3>
             <p className="mb-6">
-              From 2020 to 2023, I pursued a Bachelor degree in computer engineering at
-              the Sciences and Techniques Faculty (FST) in Tangier, Morocco. The
-              program equipped me with knowledge and skills in software
-              development, hardware design, networking, and system analysis.
-              Through hands-on projects, I developed problem-solving abilities
-              and a passion for technology. I am now ready for a successful
-              career in computer engineering.
+              From 2020 to 2023, I pursued a Bachelor degree in computer
+              engineering at the Sciences and Techniques Faculty (FST) in
+              Tangier, Morocco. The program equipped me with knowledge and
+              skills in software development, hardware design, networking, and
+              system analysis. Through hands-on projects, I developed
+              problem-solving abilities and a passion for technology. I am now
+              ready for a successful career in computer engineering.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -64,7 +82,8 @@ const About: React.FC = () => {
                   {inView ? <CountUp start={0} end={11} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Frameworks/<br />
+                  Frameworks/
+                  <br />
                   Programming Languages
                 </div>
               </div>
@@ -82,7 +101,16 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact me</button>
+              <Link to="contact" smooth={true} duration={1500}>
+                <button className="btn btn-lg">Contact me</button>
+              </Link>
+              <a
+                href={MY_RESUME_URL}
+                className="text-gradient btn-link"
+                download
+              >
+                My resume
+              </a>
             </div>
           </motion.div>
         </div>
