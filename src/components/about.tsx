@@ -108,6 +108,7 @@ const About: React.FC = () => {
                 href={MY_RESUME_URL}
                 className="text-gradient btn-link"
                 download={download}
+                rel="noopener noreferrer"
               >
                 My resume
               </a>

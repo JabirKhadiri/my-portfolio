@@ -21,7 +21,7 @@ const Banner = () => {
         aTag.remove();
       });
   };
-  
+
   return (
     <section
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -82,7 +82,14 @@ const Banner = () => {
               <Link to="contact" smooth={true} duration={1500}>
                 <button className="btn btn-lg">Contact me</button>
               </Link>
-              <a href={MY_RESUME_URL} className="text-gradient btn-link" download={download}>My resume</a>
+              <a
+                href={MY_RESUME_URL}
+                rel="noopener noreferrer"
+                className="text-gradient btn-link"
+                download={download}
+              >
+                My resume
+              </a>
             </motion.div>
           </div>
           <motion.div
