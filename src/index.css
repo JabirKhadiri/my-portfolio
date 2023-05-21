@@ -86,7 +86,7 @@ font-family: 'Rajdhani';
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
-    @apply py-12 lg:py-32 lg:h-screen flex items-center;
+    @apply py-10 lg:py-20 lg:h-screen flex items-center;
     margin-bottom: 4rem;
   }
 }

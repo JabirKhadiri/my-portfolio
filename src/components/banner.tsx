@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
 const Banner = () => {
-  const MY_RESUME_URL = "http://localhost:5173/../../public/Jabir_Khadiri.pdf";
+  const MY_RESUME_URL = "https://jabir-khadiri.netlify.app/Jabir_Khadiri.pdf";
 
   const download = (url: string) => {
     fetch(url)

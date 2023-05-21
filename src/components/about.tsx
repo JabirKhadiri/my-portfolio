@@ -9,7 +9,7 @@ const About: React.FC = () => {
     threshold: 0.5,
   });
 
-  const MY_RESUME_URL = "http://localhost:5173/../../public/Jabir_Khadiri.pdf";
+  const MY_RESUME_URL = "https://jabir-khadiri.netlify.app/Jabir_Khadiri.pdf";
 
   const download = (url: string) => {
     fetch(url)
