@@ -7,7 +7,7 @@ const Header = () => {
     <header className="py-2">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <a href="#">
+          <a href="../App">
             <img className="w-[110px] h-auto" src={Logo} />
           </a>
           <div className="flex items-center gap-x-6 mx-auto lg:mx-0">

@@ -67,7 +67,7 @@ const About: React.FC = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={6} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={7} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
@@ -92,7 +92,7 @@ const About: React.FC = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={13} end={1} duration={3} /> : null}
+                  {inView ? <CountUp start={13} end={1} duration={5} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Years of <br />

@@ -15,7 +15,7 @@ const Banner = () => {
         const fileName = url.split("/").pop();
         const aTag = document.createElement("a");
         aTag.href = blobURL;
-        aTag.setAttribute("download", fileName || "jabir_khadiri.pdf");
+        aTag.setAttribute("download", fileName || "Jabir Khadiri.pdf");
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
